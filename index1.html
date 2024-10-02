@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dark and Darker - Gear Planner</title>
+    <link rel="stylesheet" href="StyleSheet.css" />
+</head>
+<body>
+
+    <h1>Select Your Class</h1>
+    <p>This is a Gear Simulator for Dark and Darker</p>
+    <div class="class-buttons">
+        <a href="#" class="class-button" data-class="Fighter">
+            <img src="https://darkanddarker.wiki.spellsandguns.com/images/f/f9/Fighters.png" class="class-icon" />
+            <span>Fighter</span>
+        </a>
+        <a href="#" class="class-button" data-class="Cleric">
+            <img src="https://darkanddarker.wiki.spellsandguns.com/images/4/49/Clerics.png" class="class-icon" />
+            <span>Cleric</span>
+        </a>
+        <a href="#" class="class-button" data-class="Wizard">
+            <img src="https://darkanddarker.wiki.spellsandguns.com/images/2/2a/Wizards.png" class="class-icon" />
+            <span>Wizard</span>
+        </a>
+        <a href="#" class="class-button" data-class="Barbarian">
+            <img src="https://darkanddarker.wiki.spellsandguns.com/images/1/16/Barbarians.png" class="class-icon" />
+            <span>Barbarian</span>
+        </a>
+        <a href="#" class="class-button" data-class="Rogue">
+            <img src="https://darkanddarker.wiki.spellsandguns.com/images/2/22/Rogues.png" class="class-icon" />
+            <span>Rogue</span>
+        </a>
+        <a href="#" class="class-button" data-class="Ranger">
+            <img src="https://darkanddarker.wiki.spellsandguns.com/images/1/19/Rangers.png" class="class-icon" />
+            <span>Ranger</span>
+        </a>
+        <a href="#" class="class-button" data-class="Bard">
+            <img src="https://darkanddarker.wiki.spellsandguns.com/images/e/ee/Bards.png" class="class-icon" />
+            <span>Bard</span>
+        </a>
+        <a href="#" class="class-button" data-class="Warlock">
+            <img src="https://darkanddarker.wiki.spellsandguns.com/images/1/1c/Warlocks.png" class="class-icon" />
+            <span>Warlock</span>
+        </a>
+        <a href="#" class="class-button" data-class="Druid">
+            <img src="https://darkanddarker.wiki.spellsandguns.com/images/9/91/Druids.png" class="class-icon" />
+            <span>Druid</span>
+        </a>
+    </div>
+    <div class="container">
+        <div id="class-stats" class="class-stats">
+            <h2>Class Stats</h2>
+            <p id="stats-output">Select a class to see its stats.</p>
+        </div>
+        <div id="perkOneAndTwo">
+            <div class="perk-slot" id="perk1-slot">Perk 1</div>
+            <div class="dropdown" id="perk1-dropdown"></div>
+            <div class="perk1-info" id="perk1-info">Here stands all info about the perk</div>
+            <div class="perk-slot" id="perk2-slot">Perk 2</div>
+            <div class="dropdown" id="perk2-dropdown"></div>
+            <div class="perk2-info" id="perk2-info">Here stands all info about the perk</div>
+            <div class="skill-slot" id="skill1-slot">Skill 1</div>
+            <div class="dropdown" id="skill1-dropdown"></div>
+            <div class="skill1-info">Here stands all info about the skill</div>
+        </div>
+      
+
+        <div id="inventory">
+            <div class="inventory-slot" id="head-slot">Head</div>
+            <div class="dropdown" id="head-dropdown"></div>
+            <div class="inventory-slot" id="chest-slot">Chest</div>
+            <div class="dropdown" id="chest-dropdown"></div>
+            <div class="inventory-slot" id="legs-slot">Legs</div>
+            <div class="dropdown" id="legs-dropdown"></div>
+            <div class="inventory-slot" id="hands-slot">Hands</div>
+            <div class="dropdown" id="hands-dropdown"></div>
+            <div class="inventory-slot" id="foot-slot">Foot</div>
+            <div class="dropdown" id="foot-dropdown"></div>
+            <div class="inventory-slot" id="back-slot">Back</div>
+            <div class="dropdown" id="back-dropdown"></div>
+            <div class="inventory-slot" id="ring1-slot">Ring 1</div>
+            <div class="dropdown" id="ring1-dropdown"></div>
+            <div class="inventory-slot" id="ring2-slot">Ring 2</div>
+            <div class="dropdown" id="ring2-dropdown"></div>
+            <div class="inventory-slot" id="weapon-slot">Weapon</div>
+            <div class="dropdown" id="weapon-dropdown"></div>
+        </div>
+
+        <div id="perkThreeAndFour">
+            <div class="perk-slot" id="perk3-slot">Perk 3</div>
+            <div class="dropdown" id="perk3-dropdown"></div>
+            <div class="perk3-info" id="perk3-info">Here stands all info about the perk</div>
+            <div class="perk-slot" id="perk4-slot">Perk 4</div>
+            <div class="dropdown" id="perk4-dropdown"></div>
+            <div class="perk4-info" id="perk4-info">Here stands all info about the perk</div>
+            <div class="skill-slot" id="skill2-slot">Skill 2</div>
+            <div class="dropdown" id="skill2-dropdown"></div>
+            <div class="skill2-info">Here stands all info about the skill</div>
+        </div>
+
+       
+
+        <div id="equipment">
+            <h2>Equipped Items</h2>
+            <div id="equipped-weapon" class="slot">Weapon: None</div>
+            <div id="equipped-head" class="slot">Head: None</div>
+            <div id="equipped-chest" class="slot">Chest: None</div>
+            <div id="equipped-legs" class="slot">Legs: None</div>
+            <div id="equipped-hands" class="slot">Hands: None</div>
+            <div id="equipped-foot" class="slot">Foot: None</div>
+            <div id="equipped-back" class="slot">Back: None</div>
+        </div>
+    </div>
+    <script src="file.js"></script>
+</body>
+</html>

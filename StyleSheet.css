@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://d1lss44hh2trtw.cloudfront.net/assets/article/2023/03/27/dark-and-darker-classes_feature.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.class-buttons {
+    margin: 20px 0;
+}
+
+.class-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(33, 33, 28, 0.871);
+   // background-image: url(https://t4.ftcdn.net/jpg/03/33/16/51/360_F_333165149_Kn74XQJa5iXp7x1ry8qSUDjZXYsbui94.jpg);
+    background-size: 100% auto; /* Width set to 100% of the button */
+    background-repeat: no-repeat; 
+
+}
+
+
+    .class-button:hover {
+        background-color: black;
+        border: 0.5px solid white;
+        border-radius:5px;
+    }
+h1{
+    color:orange;
+    font-size:3rem;
+}
+
+.class-icon {
+    width: 125px;
+    height: 200px;
+}
+
+.class-button span {
+    display: block; 
+    margin-top: 5px; 
+    color: orange;
+    font-weight: bold;
+}
+
+.class-stats {
+    text-align: left;
+    border: 1px solid rgba(46, 46, 46, 0.871);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),rgba(46, 46, 46, 0.871);
+    color: antiquewhite;
+}
+
+#stats-output {
+    white-space: pre-line;
+}
+#inventory, #equipment {
+    justify-content:center;
+    
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),rgba(46, 46, 46, 0.871);
+    color: antiquewhite;
+}
+
+.container {
+    display:flex;
+    justify-content:center;
+}
+
+.slot {
+    margin: 10px 0;
+    padding: 5px;
+    background-color: rgba(79, 79, 79, 0.871);
+    border-radius:5px;
+}
+
+.item {
+    justify-content: left;
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    //background-color: rgba(79, 79, 79, 0.871);
+}
+.perk-slot {
+    cursor: pointer; /* Indicate that the slot is clickable */
+    padding: 10px;
+    border: 1px solid rgba(201, 201, 184, 0.871);
+    margin: 5px 0;
+}
+
+    .item:hover {
+        background-color: gray;
+    }
+.dropdown {
+    display: none; /* Hide dropdowns by default */
+    position: absolute; /* Make dropdowns positionable */
+    background: rgba(43, 43, 41, 0.922);
+    border: 1px solid #ccc;
+    z-index: 1;
+    overflow: auto;
+    max-height: 100px;
+    width: 150px;
+}
+
+    .dropdown.active {
+        display: block; /* Show dropdown when active */
+    }
+
+.inventory-slot {
+    cursor: pointer; /* Indicate that the slot is clickable */
+    padding: 10px;
+    border: 1px solid rgba(201, 201, 184, 0.871);
+    margin: 5px 0;
+}
+#head-slot{
+  
+    position:center;
+    justify-content:center;
+}
+
+.item {
+    padding: 5px;
+    cursor: pointer;
+}
+#perkOneAndTwo, #perkThreeAndFour {
+    border: none;
+    margin-top: 20%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),rgba(46, 46, 46, 0.871);
+    color: antiquewhite;
+}
+.perk2-slot, .perk4-slot {
+    margin-top: 50%;
+    cursor: pointer;
+    padding: 10px;
+   
+    border: 1px solid rgba(201, 201, 184, 0.871);
+}
+.perk1-slot, .perk3-slot {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgba(201, 201, 184, 0.871);
+}

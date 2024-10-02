@@ -1,0 +1,31 @@
+//TODO
+
+//ARMOR
+		-Alle Waffen von Wiki eintragen
+		-Variationen einführen(poor,common,uncommon,rare,epic,legendary,unique)
+//WAFFEN
+		-Alle Waffen von Wiki eintragen
+		-Variationen einführen(poor,common,uncommon,rare,epic,legendary,unique)
+//ENCHANTMENTS
+		-Implementieren von auswählen von Enchants mit eigenen Parametern
+		-Einstellbar machen in equipped items fenster
+//DPS SIM
+		-Formel für DPS herausfinden
+		-Formel implementieren
+		-Trainingsdummy erstellen
+		-Trainingsdummy einstellbar machen
+//CLASSES
+		-Klassen Attribute fertigstellen
+		-Perks implementieren
+		-Cooldown reduction anzeigen(cooldown in Sekunden)
+//STATS
+		BuffDuration: 0
+		DebuffDuration: 0
+		ArmorPenetration: 0
+		MagicPenetration: 0
+		HeadShotReduction: 0
+		ProjectileDamageReduction: 0
+		MagicPowerBonus: 0
+		FromMagicPower: 15
+implementieren
+

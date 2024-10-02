@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>DarkAndDarkerGearPlanner</title>
+</head>
+<body>
+    <center>
+        <h1>Dark and Darker GearPlanner</h1>
+        <p>This Website is to simulate Stats and Dps in Dark and Darker</p>
+        <h1>Character Equipment</h1>
+        <!-- Class Selection -->
+        <div>
+            <label for="character-class">Choose Class:</label>
+            <select id="character-class" onchange="updateClass()">
+                <option value="Fighter">Fighter</option>
+                <option value="Wizard">Wizard</option>
+                <option value="Barbarian">Barbarian</option>
+                <option value="Bard">Bard</option>
+            </select>
+        </div>
+
+        <!-- Weapon Type and Weapon Selection -->
+        <div>
+            <label for="weapon-type">Choose weapon type:</label>
+            <select id="weapon-type" onchange="updateWeaponList()">
+                <option value="oneHanded">One-Handed</option>
+                <option value="twoHanded">Two-Handed</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="weapons">Choose a weapon:</label>
+            <select id="weapons">
+                <!-- Weapon options will be dynamically populated -->
+            </select>
+        </div>
+
+        <!-- Equip Weapon Slot -->
+        <div>
+            <label for="equip-slot">Equip to:</label>
+            <select id="equip-slot">
+                <option value="mainHand">Main Hand</option>
+                <option value="offHand">Off Hand</option>
+            </select>
+            <button onclick="equipWeapon()">Equip Weapon</button>
+        </div>
+
+        <!-- Character and Weapon Stats Display -->
+        <div class="stats">
+            <h2>Class and Weapon Stats</h2>
+            <p id="selected-class"></p>
+            <p id="equipped-main-hand"></p>
+            <p id="equipped-off-hand"></p>
+            <p id="weapon-stats"></p>
+        </div>
+        <script src="app.js"></script>
+    </center>
+</body>
+</html>
